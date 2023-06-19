@@ -1,23 +1,34 @@
-import React from 'react';
-import Image from 'next/image';
-import Logo from "@/../public/logo.png";
+import React from "react";
+import Image from "next/image";
+import Button from "../Button";
+import Colors from "../colors";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className='h-14 bg-white sticky flex items-center gap-4 w-full p-2'>
-        <div className='h-[90%]'>
-          <Image 
-            src={Logo} 
-            alt="Logo"
-            className='object-cover w-full h-full'
-          />
-        </div>
-        <div className='bg-green-500'>q</div>
-        <div className='flex-1'>
-          <input type='text' className='w-full h-full'/>
-        </div>
-        <div className='bg-red-200'>q</div>
-        <div className='bg-red-500'>q</div>
+    <header className="sticky flex h-12 w-full items-center justify-between gap-4 bg-white p-2">
+      <Link href="/" className="h-[90%]">
+        <Image
+          src="/logo.png"
+          width={100}
+          height={100}
+          alt="Logo"
+          className="h-full w-full object-cover"
+        />
+      </Link>
+      <div
+        className="flex h-full w-1/2 max-w-xl items-center rounded-full border border-solid border-themeGrey100 
+                      bg-themeGrey100 px-4 hover:border-blue-300 hover:bg-white"
+      >
+        <input
+          type="text"
+          className="flex h-full w-full border-none bg-transparent align-middle outline-0"
+        />
+      </div>
+      <div className="flex gap-4">
+        <Button color={Colors.themeGrey100}>Get App</Button>
+        <Button color={Colors.themeGrey200}>Log In</Button>
+      </div>
     </header>
-  )
+  );
 }
