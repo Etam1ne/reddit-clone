@@ -13,12 +13,11 @@ module.exports = {
         themeGrey200: "#dae0e6",
         themeGrey100: "#f6f7f8",
         themeOrange: "#ff4500",
-        themeXdd: "#000",
       },
     },
   },
   plugins: [],
   safelist: [{
     pattern: /^(bg|text)-theme.*/
-  }]
+  }],
 };

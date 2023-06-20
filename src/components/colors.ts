@@ -3,8 +3,7 @@ enum Colors {
     themeGrey500 = "themeGrey500",
     themeGrey200 = 'themeGrey200',
     themeGrey100 = 'themeGrey100',
-    themeOrange = 'themeOrange', 
-    themeXdd = 'themeXdd',
+    themeOrange = 'themeOrange',
 }
 
 export default Colors;

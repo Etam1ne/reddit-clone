@@ -1,8 +1,11 @@
+'use client'
+
 import React from "react";
 import Image from "next/image";
 import Button from "../Button";
 import Colors from "../colors";
 import Link from "next/link";
+import TextInput from "../TextInput";
 
 export default function Header() {
   return (
@@ -12,23 +15,26 @@ export default function Header() {
           src="/logo.png"
           width={100}
           height={100}
+          priority={true}
           alt="Logo"
           className="h-full w-full object-cover"
         />
       </Link>
-      <div
-        className="flex h-full w-1/2 max-w-xl items-center rounded-full border border-solid border-themeGrey100 
-                      bg-themeGrey100 px-4 hover:border-blue-300 hover:bg-white"
-      >
-        <input
-          type="text"
-          placeholder="Search"
-          className="flex h-full text-themeGrey500 w-full border-none bg-transparent align-middle outline-0"
+      
+      <TextInput>
+        <Image
+          src="/search.svg"
+          width={100}
+          height={100}
+          priority={true}
+          alt="Logo"
+          className="h-full w-full object-cover"
         />
-      </div>
+      </TextInput>
+
       <div className="flex gap-4">
-        <Button>Get App</Button>
-        <Button color={Colors.themeOrange} textColor="text-white">Log In</Button>
+        <Button onClick={() => console.log('pressed')}>Get App</Button>
+        <Button onClick={() => console.log('pressed')}color={Colors.themeOrange} textColor="text-white">Log In</Button>
       </div>
     </header>
   );
