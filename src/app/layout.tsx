@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
 import "./globals.css";
+import { Inter } from "next/font/google";
+const inter = Inter({subsets: ['cyrillic', 'latin']})
 
 export const metadata = {
   title: "Reddit clone",
@@ -13,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-themeGrey200">
+      <body className={'bg-themeGrey200 ' + inter.className}>
         <Header />
         <main>{children}</main>
       </body>

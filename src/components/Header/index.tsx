@@ -22,12 +22,13 @@ export default function Header() {
       >
         <input
           type="text"
-          className="flex h-full w-full border-none bg-transparent align-middle outline-0"
+          placeholder="Search"
+          className="flex h-full text-themeGrey500 w-full border-none bg-transparent align-middle outline-0"
         />
       </div>
       <div className="flex gap-4">
-        <Button color={Colors.themeGrey100}>Get App</Button>
-        <Button color={Colors.themeGrey200}>Log In</Button>
+        <Button>Get App</Button>
+        <Button color={Colors.themeOrange} textColor="text-white">Log In</Button>
       </div>
     </header>
   );
