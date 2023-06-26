@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         themeGrey900: "#1a1a1b",
         themeGrey500: "#272729",
+        themeGrey300: "#898989",
         themeGrey200: "#dae0e6",
         themeGrey100: "#f6f7f8",
         themeOrange: "#ff4500",
@@ -17,7 +18,9 @@ module.exports = {
     },
   },
   plugins: [],
-  safelist: [{
-    pattern: /^(bg|text)-theme.*/
-  }],
+  safelist: [
+    {
+      pattern: /^(bg|text)-theme.*/,
+    },
+  ],
 };
