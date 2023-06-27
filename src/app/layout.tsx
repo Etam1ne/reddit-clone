@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={"bg-themeGrey200 " + inter.className}>
         <Header />
-        <main>{children}</main>
+        <main className="flex w-full justify-center">{children}</main>
       </body>
     </html>
   );

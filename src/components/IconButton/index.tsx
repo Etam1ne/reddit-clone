@@ -11,7 +11,7 @@ export default function IconButton({
     <button
       onClick={onClick}
       className={
-        "flex items-center justify-center gap-2 p-2 hover:bg-themeGrey200" +
+        "flex items-center justify-center gap-2 p-1 hover:bg-themeGrey200" +
         " " +
         className
       }
